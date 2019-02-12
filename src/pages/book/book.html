@@ -1,0 +1,47 @@
+<!--
+  Generated template for the BookPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar color="ternary">
+    <ion-title >Book Info</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content  class="info">
+      
+  <ion-item color="dark">
+    <ion-label color="ternary" floating>Name</ion-label>
+    <ion-input [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+  <ion-item color="dark">
+      <ion-label floating color="ternary">Author</ion-label>
+      <ion-input type="text" [(ngModel)]="author"></ion-input>
+    </ion-item>
+  
+  <ion-item color="dark">
+    <ion-label floating color="ternary">Publisher</ion-label>
+    <ion-input [(ngModel)]="publisher"></ion-input>
+  </ion-item>
+
+  
+  <ion-item color="dark">
+    <ion-label floating color="ternary">Number of Paper</ion-label>
+    <ion-input type="text" [(ngModel)]="paper"></ion-input>
+  </ion-item>
+  
+  <ion-item color="dark">
+    <ion-label floating color="ternary">Description</ion-label>
+    <ion-input type="text" [(ngModel)]="desc"></ion-input>
+  </ion-item>
+  <div text-center padding-top>
+<button  ion-button outline color="ternary" (click)="bookadd()">Add</button>
+</div>
+</ion-content>

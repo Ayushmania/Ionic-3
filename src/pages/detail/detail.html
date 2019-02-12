@@ -1,0 +1,39 @@
+
+<!--
+  Generated template for the DetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="ternary">
+    <ion-title>DetailPage</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding >
+  <ion-card>
+    <ion-card-title padding>
+     <strong>Name:</strong> {{book.name}}
+      </ion-card-title>
+    
+    <p padding>
+    <strong>Author:</strong> {{book.author}}
+    </p>
+    <p padding>
+      <strong> Publisher:</strong>{{book.publisher}}
+    </p>
+    <p padding>
+      <strong>No. of Page:</strong>{{book.paper}}
+      </p>
+      <p padding>
+        <strong>Description:</strong>{{book.desc}}
+      </p>
+  </ion-card>
+  <button ion-button (click)="editBook()">Edit</button>
+  <button ion-button (click)="deleteBook()">Delete</button>
+</ion-content>
+

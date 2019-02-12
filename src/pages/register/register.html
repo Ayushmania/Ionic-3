@@ -1,0 +1,52 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="ternary">
+    <ion-title >My Info</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="info">
+      
+  <ion-item color="dark">
+    <ion-label color="ternary" floating>Username</ion-label>
+    <ion-input type="text" [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+  <ion-item color="dark">
+      <ion-label floating color="ternary">Email</ion-label>
+      <ion-input type="text" [(ngModel)]="email"></ion-input>
+    </ion-item>
+  
+  <ion-item color="dark">
+    <ion-label floating color="ternary">Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+  
+  <ion-item color="dark">
+    <ion-label floating color="ternary">Phone No:</ion-label>
+    <ion-input type="text" [(ngModel)]="phoneNo"></ion-input>
+  </ion-item>
+  
+  <ion-item color="dark">
+    <ion-label floating color="ternary">Dept</ion-label>
+    <ion-input type="text" [(ngModel)]="dept"></ion-input>
+  </ion-item>
+
+  <ion-item color="dark">
+    <ion-label floating color="ternary">College ID</ion-label>
+    <ion-input type="text" [(ngModel)]="idcol"></ion-input>
+  </ion-item>
+
+  <div text-center padding-top>
+<button  ion-button outline color="ternary" (click)="studHome()">Register</button>
+</div>
+</ion-content>
